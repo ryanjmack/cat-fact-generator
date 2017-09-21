@@ -10,8 +10,10 @@ html {
 body {
 
   // general rules
+  color: $accent;
   margin: 0;
   height: 100vh;
+  position: relative;
   width: 100%;
 
   // background rules
@@ -36,11 +38,56 @@ body {
     background-image: url('../../images/cat_full.jpg');
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: 1280px) {
     background-image: url('../../images/cat_1920.jpg');
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1860px) {
     background-image: url('../../images/cat_3235.jpg');
   }
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 3px solid $accent;
+  border-radius: 6px;
+  color: $accent;
+  margin-left: 20px;
+  height: 3em;
+  transition: all 0.3s;
+  width: 7em;
+
+  &:hover {
+    border-color: yellow;
+    color: yellow;
+  }
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 3px solid $accent;
+  border-radius: 3px;
+  margin: 20px auto;
+  padding: 0.3em;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.quote {
+  background-color: rgba(0, 0, 0, 0.1);
+  min-height: 10.25em;
+}
+
+p {
+  font-size: 1.2em;
+  min-height: 100%;
+  margin: 0;
+  padding: 1em;
 }
