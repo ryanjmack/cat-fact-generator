@@ -48,28 +48,30 @@ body {
 }
 
 button {
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 3px solid $accent;
+  background-color: $accent;
+  border: 2px solid $text-dark;
   border-radius: 6px;
-  color: $accent;
-  margin-left: 20px;
-  height: 3em;
+  color: $text-dark;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 20px;
+  padding: 0.7em;
+  text-transform: uppercase;
   transition: all 0.3s;
-  width: 7em;
+  max-width: 100%;
 
   &:hover {
-    border-color: yellow;
-    color: yellow;
+    background-color: darken($accent, 5%);
   }
 }
 
 h1 {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 3px solid $accent;
-  border-radius: 3px;
+  background-color: $accent;
+  color: $text-dark;
   margin: 20px auto;
   padding: 0.3em;
   text-align: center;
+  transform: skewX(-7deg);
 }
 
 main {
@@ -81,13 +83,25 @@ main {
 }
 
 .quote {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(110, 255, 255, 0.2);
+  margin-top: auto;
   min-height: 10.25em;
+
+  @media (min-width: 595px) {
+    margin-left: 20px;
+    margin-top: 0;
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 p {
+  color: $accent;
   font-size: 1.2em;
   min-height: 100%;
   margin: 0;
   padding: 1em;
+  text-shadow: 1px 1px 0 $text-dark;
 }
