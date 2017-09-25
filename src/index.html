@@ -24,4 +24,20 @@
 	</main>
 </body>
 
+<script>
+	const endpoint = 'https://rawgit.com/ryanjmack/7e955181b50311d5fdb4648014eac3e9/raw/826bcdbbdff9b489120e7c262c5af5a2bcd96949/cat-facts.json';
+	const facts = [];
+
+	let x = fetch(endpoint).then(blob => blob.json()).then(data => facts.push(...data.data));
+
+	const quote = document.querySelector('.quote p');
+	const button = document.querySelector('button');
+
+	function refreshFact(e) {
+		console.log(e);
+	}
+
+	button.addEventListener('click', refreshFact);
+</script>
+
 </html>
