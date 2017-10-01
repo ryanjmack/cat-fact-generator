@@ -1,7 +1,159 @@
-h1 {
-  color: blue; }
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  color: #F4BC27;
+  margin: 0;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  z-index: 0; }
+  body:before {
+    background-image: url("../../images/cat-portrait_small.jpg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 100%;
+    -webkit-filter: saturate(200%);
+            filter: saturate(200%);
+    position: absolute;
+    width: 100%;
+    z-index: -1; }
+    @media (min-width: 500px) {
+      body:before {
+        background-position: center right; } }
+    @media (min-width: 550px) {
+      body:before {
+        background-image: url("../../images/cat-portrait_big.jpg"); } }
+    @media (min-width: 700px) {
+      body:before {
+        background-image: url("../../images/cat-crop_big.jpg"); } }
+    @media (min-width: 900px) {
+      body:before {
+        background-image: url("../../images/cat_1280.jpg");
+        background-position-x: left; } }
+    @media (min-width: 1280px) {
+      body:before {
+        background-image: url("../../images/cat_1920.jpg");
+        background-position: center right; } }
+    @media (min-width: 1860px) {
+      body:before {
+        background-image: url("../../images/cat_3235.jpg"); } }
+
+button {
+  background-color: #F4BC27;
+  border: 2px solid #2a2a2a;
+  border-radius: 6px;
+  color: #2a2a2a;
+  font-size: 1.3em;
+  font-weight: bolder;
+  font-family: 'Bungee Inline', cursive;
+  letter-spacing: 1px;
+  margin: 20px;
+  padding: 0.5em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  max-width: 100%; }
+  button:hover {
+    background-color: rgba(244, 188, 39, 0.75); }
+  button:focus {
+    outline: none; }
+  @media (min-width: 800px) {
+    button {
+      font-size: 1.6em;
+      font-weight: bolder; } }
+
+.error {
+  color: #1b95e0;
+  text-decoration: underline; }
 
 h1 {
-  font-size: 100px; }
+  background-color: #F4BC27;
+  color: #2a2a2a;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 0 #DE6000;
+  margin: 20px auto;
+  padding: 0.4em;
+  text-align: center;
+  -webkit-transform: skewX(-7deg);
+          transform: skewX(-7deg); }
+
+.twitter-share-button {
+  bottom: 0;
+  right: 0;
+  color: #1b95e0;
+  display: inline-block;
+  font-size: 2em;
+  padding: 0.2em;
+  position: absolute;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  .twitter-share-button:hover {
+    color: #1677b2; }
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%; }
+
+.quote {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: auto;
+  min-height: 10.25em;
+  position: relative;
+  text-align: justify;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  @media (min-width: 595px) {
+    .quote {
+      background-color: rgba(255, 255, 255, 0.1);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-left: 20px;
+      margin-top: 0;
+      max-width: 30em;
+      min-height: 30%;
+      width: 50%; } }
+  @media (min-width: 800px) {
+    .quote {
+      margin-left: 40px; } }
+
+p {
+  color: #1b95e0;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#24ABFF), color-stop(33%, #19FFB7), to(#36FF2D));
+  background-image: linear-gradient(90deg, #24ABFF, #19FFB7 33%, #36FF2D);
+  font-size: 1.4em;
+  line-height: 1.4;
+  min-height: 100%;
+  margin: 0;
+  padding: 1.5em 1.2em 2.2em 1.2em;
+  -webkit-text-fill-color: transparent; }
 
 /*# sourceMappingURL=master.css.map */
