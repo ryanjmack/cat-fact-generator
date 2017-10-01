@@ -1,4 +1,5 @@
 var autoprefixer = require('gulp-autoprefixer');
+var babel = require('gulp-babel');
 var browserSync = require('browser-sync').create();
 var cache = require('gulp-cache');
 var cssnano = require('gulp-cssnano');
@@ -82,7 +83,11 @@ gulp.task('useref', function() {
         .pipe(useref())
 
     // Minifies only if it's a JavaScript file
-    .pipe(gulpIf('*.js', uglify()))
+  /*  .pipe(gulpIf('*.js', babel({
+      presets: ['es2015']
+    }), uglify().on('error', function(e){
+            console.log(e);
+    })))*/
 
     // Minifies only if it's a CSS file, also fix url paths for background images
     .pipe(gulpIf('*.css', cssnano({

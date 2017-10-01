@@ -15,7 +15,7 @@ body {
   width: 100%;
   z-index: 0; }
   body:before {
-    background-image: url("../../images/cat-portrait_small.jpg");
+    background-image: url("../images/cat-portrait_small.jpg");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,21 +32,21 @@ body {
         background-position: center right; } }
     @media (min-width: 550px) {
       body:before {
-        background-image: url("../../images/cat-portrait_big.jpg"); } }
+        background-image: url("../images/cat-portrait_big.jpg"); } }
     @media (min-width: 700px) {
       body:before {
-        background-image: url("../../images/cat-crop_big.jpg"); } }
+        background-image: url("../images/cat-crop_big.jpg"); } }
     @media (min-width: 900px) {
       body:before {
-        background-image: url("../../images/cat_1280.jpg");
+        background-image: url("../images/cat_1280.jpg");
         background-position-x: left; } }
     @media (min-width: 1280px) {
       body:before {
-        background-image: url("../../images/cat_1920.jpg");
+        background-image: url("../images/cat_1920.jpg");
         background-position: center right; } }
     @media (min-width: 1860px) {
       body:before {
-        background-image: url("../../images/cat_3235.jpg"); } }
+        background-image: url("../images/cat_3235.jpg"); } }
 
 button {
   background-color: #F4BC27;

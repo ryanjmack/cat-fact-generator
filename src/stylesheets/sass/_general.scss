@@ -19,7 +19,7 @@ body {
 
   &:before {
     // background rules
-    background-image: url("../../images/cat-portrait_small.jpg");
+    background-image: url("../images/cat-portrait_small.jpg");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,25 +36,25 @@ body {
     }
 
     @media (min-width: 550px) {
-      background-image: url('../../images/cat-portrait_big.jpg');
+      background-image: url('../images/cat-portrait_big.jpg');
     }
 
     @media (min-width: 700px) {
-      background-image: url('../../images/cat-crop_big.jpg');
+      background-image: url('../images/cat-crop_big.jpg');
     }
 
     @media (min-width: 900px) {
-      background-image: url('../../images/cat_1280.jpg');
+      background-image: url('../images/cat_1280.jpg');
       background-position-x: left;
     }
 
     @media (min-width: 1280px) {
-      background-image: url('../../images/cat_1920.jpg');
+      background-image: url('../images/cat_1920.jpg');
       background-position: center right;
     }
 
     @media (min-width: 1860px) {
-      background-image: url('../../images/cat_3235.jpg');
+      background-image: url('../images/cat_3235.jpg');
     }
   }
 }
