@@ -15,35 +15,47 @@ body {
   height: 100vh;
   position: relative;
   width: 100%;
+  z-index: 0;
 
-  // background rules
-  background-image: url('../../images/cat-potrait_small.jpg');
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &:before {
+    // background rules
+    background-image: url("../../images/cat-portrait_small.jpg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 100%;
+    filter: saturate(200%);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 
-  @media (min-width: 500px) {
-    background-position: center right;
-  }
+    @media (min-width: 500px) {
+      background-position: center right;
+    }
 
-  @media (min-width: 550px) {
-    background-image: url('../../images/cat-potrait_big.jpg');
-  }
+    @media (min-width: 550px) {
+      background-image: url('../../images/cat-portrait_big.jpg');
+    }
 
-  @media (min-width: 700px) {
-    background-image: url('../../images/cat-crop.jpg');
-  }
+    @media (min-width: 700px) {
+      background-image: url('../../images/cat-crop_big.jpg');
+    }
 
-  @media (min-width: 850px) {
-    background-image: url('../../images/cat_full.jpg');
-  }
+    @media (min-width: 900px) {
+      background-image: url('../../images/cat_1280.jpg');
+      background-position-x: left;
+    }
 
-  @media (min-width: 1280px) {
-    background-image: url('../../images/cat_1920.jpg');
-  }
+    @media (min-width: 1280px) {
+      background-image: url('../../images/cat_1920.jpg');
+      background-position: center right;
+    }
 
-  @media (min-width: 1860px) {
-    background-image: url('../../images/cat_3235.jpg');
+    @media (min-width: 1860px) {
+      background-image: url('../../images/cat_3235.jpg');
+    }
   }
 }
 
@@ -55,21 +67,32 @@ button {
   font-size: 1em;
   font-weight: bold;
   margin: 20px;
+  //max-width: 750px;
   padding: 0.7em;
   text-transform: uppercase;
   transition: all 0.3s;
   max-width: 100%;
 
   &:hover {
-    background-color: darken($accent, 5%);
+    background-color: #FF7600;//darken($accent, 5%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: 800px) {
+    font-size: 1.2em;
+    font-weight: bolder;
   }
 }
 
 h1 {
   background-color: $accent;
   color: $text-dark;
+  font-family: 'Pacifico', cursive;
   margin: 20px auto;
-  padding: 0.3em;
+  padding: 0.4em;
   text-align: center;
   transform: skewX(-7deg);
 }
@@ -83,25 +106,36 @@ main {
 }
 
 .quote {
-  background-color: rgba(110, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
   margin-top: auto;
   min-height: 10.25em;
+  text-align: justify;
+  transition: all 0.5s;
 
   @media (min-width: 595px) {
-    margin-left: 20px;
-    margin-top: 0;
-    width: 50%;
-    min-height: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 20px;
+    margin-top: 0;
+    max-width: 30em;
+    min-height: 30%;
+    width: 50%;
+  }
+
+  @media (min-width: 800px) {
+    margin-left: 40px;
+  }
 }
 
 p {
-  color: $accent;
-  font-size: 1.2em;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #24ABFF, #19FFB7 33%, #36FF2D);
+  font-size: 1.4em;
+  line-height: 1.4;
   min-height: 100%;
   margin: 0;
   padding: 1em;
-  text-shadow: 1px 1px 0 $text-dark;
+  -webkit-text-fill-color: transparent;
 }
