@@ -8,46 +8,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Bungee+Inline" rel="stylesheet">
+	<link rel="stylesheet" href="/fontello/css/fontello.css">
+	<!-- build:css css/master.min.css* -->
 	<link rel="stylesheet" href="/stylesheets/css/normalize.css">
 	<link rel="stylesheet" href="/stylesheets/css/master.css">
+	<!-- endbuild -->
+
 </head>
+<!-- build:js js/master.min.js defer -->
+<script src="js/general.js" defer></script>
+<!-- endbuild -->
 
 <body>
 	<main>
 		<h1>Cat Fact Generator</h1>
 
 		<div class="quote">
-			<p>Click the generate button below to generate a fact about cats~~!!!<br><br>~~Meow</p>
+			<p></p>
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet"><i class="icon-twitter"></i></a>
 		</div>
 
 		<button type="button">Generate!</button>
 	</main>
 </body>
-
-<script>
-	const endpoint = 'https://cdn.rawgit.com/ryanjmack/7e955181b50311d5fdb4648014eac3e9/raw/185b444693feb728bb47acd22f9b83f98c1f7fd6/cat-facts.json';
-	const facts = [];
-
-	let x = fetch(endpoint).then(blob => blob.json()).then(data => facts.push(...data.data));
-
-	const quote = document.querySelector('.quote p');
-	const button = document.querySelector('button');
-
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Getting_a_random_integer_between_two_values_inclusive
-	function getRandomIntInclusive(min, max) {
-	  min = Math.ceil(min);
-	  max = Math.floor(max);
-		//The maximum is inclusive and the minimum is inclusive
-	  return Math.floor(Math.random() * (max - min + 1)) + min;
-	}
-
-	function refreshFact(e) {
-		const randomIndex = getRandomIntInclusive(0, facts.length - 1);
-		quote.textContent = facts[randomIndex].fact;
-	}
-
-	button.addEventListener('click', refreshFact);
-</script>
 
 </html>
