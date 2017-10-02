@@ -15,7 +15,7 @@ body {
   width: 100%;
   z-index: 0; }
   body:before {
-    background-image: url("../../images/cat-portrait_small.jpg");
+    background-image: url("../images/cat-portrait_small.jpg");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,21 +32,21 @@ body {
         background-position: center right; } }
     @media (min-width: 550px) {
       body:before {
-        background-image: url("../../images/cat-portrait_big.jpg"); } }
+        background-image: url("../images/cat-portrait_big.jpg"); } }
     @media (min-width: 700px) {
       body:before {
-        background-image: url("../../images/cat-crop_big.jpg"); } }
+        background-image: url("../images/cat-crop_big.jpg"); } }
     @media (min-width: 900px) {
       body:before {
-        background-image: url("../../images/cat_1280.jpg");
+        background-image: url("../images/cat_1280.jpg");
         background-position-x: left; } }
     @media (min-width: 1280px) {
       body:before {
-        background-image: url("../../images/cat_1920.jpg");
+        background-image: url("../images/cat_1920.jpg");
         background-position: center right; } }
     @media (min-width: 1860px) {
       body:before {
-        background-image: url("../../images/cat_3235.jpg"); } }
+        background-image: url("../images/cat_3235.jpg"); } }
 
 button {
   background-color: #F4BC27;
@@ -64,7 +64,7 @@ button {
   transition: all 0.3s;
   max-width: 100%; }
   button:hover {
-    background-color: rgba(244, 188, 39, 0.75);
+    background-color: #dda40b;
     color: #111111; }
   button:focus {
     outline: none; }
@@ -80,11 +80,12 @@ h1 {
   background-color: #F4BC27;
   color: #2a2a2a;
   font-family: 'Pacifico', cursive;
-  text-shadow: 2px 2px 0 #DE6000;
+  text-shadow: 1px 1px 0 #1b95e0;
   margin: 20px auto;
   max-width: 95%;
   padding: 0.4em;
   text-align: center;
+  text-shadow: 2px 2px 0 #FA7400;
   -webkit-transform: skewX(-7deg);
           transform: skewX(-7deg); }
   @media (min-width: 350px) {
@@ -120,9 +121,9 @@ main {
   width: 100%; }
 
 .quote {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-top: 1px solid #36FF2D;
-  border-bottom: 1px solid #36FF2D;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid #F4BC27;
+  border-bottom: 1px solid #F4BC27;
   margin-top: auto;
   min-height: 10.25em;
   position: relative;
@@ -131,7 +132,8 @@ main {
   transition: all 0.5s; }
   @media (min-width: 595px) {
     .quote {
-      border: 1px solid #36FF2D;
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 1px solid #F4BC27;
       border-radius: 5px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -157,11 +159,15 @@ main {
       margin-right: 62%; } }
 
 p {
-  color: #36FF2D;
-  font-size: 1.4em;
+  color: #F4BC27;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
   min-height: 100%;
   margin: 0;
-  padding: 1.5em 1.2em 2.2em 1.2em; }
+  padding: 1.5em 1.2em 2em 1.2em; }
+  @media (min-width: 595px) {
+    p {
+      font-size: 1.4em; } }
 
 /*# sourceMappingURL=master.css.map */
