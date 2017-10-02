@@ -15,7 +15,7 @@ body {
   width: 100%;
   z-index: 0; }
   body:before {
-    background-image: url("../images/cat-portrait_small.jpg");
+    background-image: url("../../images/cat-portrait_small.jpg");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,21 +32,21 @@ body {
         background-position: center right; } }
     @media (min-width: 550px) {
       body:before {
-        background-image: url("../images/cat-portrait_big.jpg"); } }
+        background-image: url("../../images/cat-portrait_big.jpg"); } }
     @media (min-width: 700px) {
       body:before {
-        background-image: url("../images/cat-crop_big.jpg"); } }
+        background-image: url("../../images/cat-crop_big.jpg"); } }
     @media (min-width: 900px) {
       body:before {
-        background-image: url("../images/cat_1280.jpg");
+        background-image: url("../../images/cat_1280.jpg");
         background-position-x: left; } }
     @media (min-width: 1280px) {
       body:before {
-        background-image: url("../images/cat_1920.jpg");
+        background-image: url("../../images/cat_1920.jpg");
         background-position: center right; } }
     @media (min-width: 1860px) {
       body:before {
-        background-image: url("../images/cat_3235.jpg"); } }
+        background-image: url("../../images/cat_3235.jpg"); } }
 
 button {
   background-color: #F4BC27;
@@ -82,13 +82,15 @@ h1 {
   font-family: 'Pacifico', cursive;
   text-shadow: 2px 2px 0 #DE6000;
   margin: 20px auto;
+  max-width: 95%;
   padding: 0.4em;
   text-align: center;
   -webkit-transform: skewX(-7deg);
           transform: skewX(-7deg); }
   @media (min-width: 350px) {
     h1 {
-      font-size: 2.2em; } }
+      font-size: 2.1em;
+      max-width: 95%; } }
 
 .twitter-share-button {
   bottom: 0;
@@ -118,7 +120,9 @@ main {
   width: 100%; }
 
 .quote {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid #36FF2D;
+  border-bottom: 1px solid #36FF2D;
   margin-top: auto;
   min-height: 10.25em;
   position: relative;
@@ -127,7 +131,8 @@ main {
   transition: all 0.5s; }
   @media (min-width: 595px) {
     .quote {
-      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid #36FF2D;
+      border-radius: 5px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -152,15 +157,11 @@ main {
       margin-right: 62%; } }
 
 p {
-  color: #1b95e0;
-  -webkit-background-clip: text;
-  background-image: -webkit-gradient(linear, left top, right top, from(#24ABFF), color-stop(33%, #19FFB7), to(#36FF2D));
-  background-image: linear-gradient(90deg, #24ABFF, #19FFB7 33%, #36FF2D);
+  color: #36FF2D;
   font-size: 1.4em;
   line-height: 1.4;
   min-height: 100%;
   margin: 0;
-  padding: 1.5em 1.2em 2.2em 1.2em;
-  -webkit-text-fill-color: transparent; }
+  padding: 1.5em 1.2em 2.2em 1.2em; }
 
 /*# sourceMappingURL=master.css.map */

@@ -21,7 +21,7 @@ body {
 
   &:before {
     // background rules
-    background-image: url("../images/cat-portrait_small.jpg");
+    background-image: url("../../images/cat-portrait_small.jpg");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,25 +38,25 @@ body {
     }
 
     @media (min-width: 550px) {
-      background-image: url('../images/cat-portrait_big.jpg');
+      background-image: url('../../images/cat-portrait_big.jpg');
     }
 
     @media (min-width: 700px) {
-      background-image: url('../images/cat-crop_big.jpg');
+      background-image: url('../../images/cat-crop_big.jpg');
     }
 
     @media (min-width: 900px) {
-      background-image: url('../images/cat_1280.jpg');
+      background-image: url('../../images/cat_1280.jpg');
       background-position-x: left;
     }
 
     @media (min-width: 1280px) {
-      background-image: url('../images/cat_1920.jpg');
+      background-image: url('../../images/cat_1920.jpg');
       background-position: center right;
     }
 
     @media (min-width: 1860px) {
-      background-image: url('../images/cat_3235.jpg');
+      background-image: url('../../images/cat_3235.jpg');
     }
   }
 }
@@ -101,12 +101,14 @@ h1 {
   font-family: 'Pacifico', cursive;
   text-shadow: 2px 2px 0 #DE6000;
   margin: 20px auto;
+  max-width: 95%;
   padding: 0.4em;
   text-align: center;
   transform: skewX(-7deg);
 
   @media (min-width: 350px) {
-    font-size: 2.2em;
+    font-size: 2.1em;
+    max-width: 95%;
   }
 }
 
@@ -134,7 +136,9 @@ main {
 }
 
 .quote {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid $green;
+  border-bottom: 1px solid $green;
   margin-top: auto;
   min-height: 10.25em;
   position: relative;
@@ -142,7 +146,9 @@ main {
   transition: all 0.5s;
 
   @media (min-width: 595px) {
-    background-color: rgba(255, 255, 255, 0.1);
+    //background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid $green;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,13 +170,13 @@ main {
 }
 
 p {
-  color: $twitter;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(90deg, #24ABFF, #19FFB7 33%, #36FF2D);
+  color: $green;
+  //-webkit-background-clip: text;
+  //background-image: linear-gradient(90deg, #24ABFF, #19FFB7 33%, #36FF2D);
   font-size: 1.4em;
   line-height: 1.4;
   min-height: 100%;
   margin: 0;
   padding:1.5em 1.2em 2.2em 1.2em;
-  -webkit-text-fill-color: transparent;
+  //-webkit-text-fill-color: transparent;
 }
