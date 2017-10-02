@@ -15,7 +15,7 @@ body {
   width: 100%;
   z-index: 0; }
   body:before {
-    background-image: url("../images/cat-portrait_small.jpg");
+    background-image: url("../../images/cat-portrait_small.jpg");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,30 +32,30 @@ body {
         background-position: center right; } }
     @media (min-width: 550px) {
       body:before {
-        background-image: url("../images/cat-portrait_big.jpg"); } }
+        background-image: url("../../images/cat-portrait_big.jpg"); } }
     @media (min-width: 700px) {
       body:before {
-        background-image: url("../images/cat-crop_big.jpg"); } }
+        background-image: url("../../images/cat-crop_big.jpg"); } }
     @media (min-width: 900px) {
       body:before {
-        background-image: url("../images/cat_1280.jpg");
+        background-image: url("../../images/cat_1280.jpg");
         background-position-x: left; } }
     @media (min-width: 1280px) {
       body:before {
-        background-image: url("../images/cat_1920.jpg");
+        background-image: url("../../images/cat_1920.jpg");
         background-position: center right; } }
     @media (min-width: 1860px) {
       body:before {
-        background-image: url("../images/cat_3235.jpg"); } }
+        background-image: url("../../images/cat_3235.jpg"); } }
 
 button {
   background-color: #F4BC27;
   border: 2px solid #2a2a2a;
   border-radius: 6px;
   color: #2a2a2a;
-  font-size: 1.3em;
-  font-weight: bolder;
-  font-family: 'Bungee Inline', cursive;
+  font-size: 1.1em;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
   margin: 20px;
   padding: 0.5em;
@@ -64,13 +64,13 @@ button {
   transition: all 0.3s;
   max-width: 100%; }
   button:hover {
-    background-color: rgba(244, 188, 39, 0.75); }
+    background-color: rgba(244, 188, 39, 0.75);
+    color: #111111; }
   button:focus {
     outline: none; }
   @media (min-width: 800px) {
     button {
-      font-size: 1.6em;
-      font-weight: bolder; } }
+      font-size: 1.4em; } }
 
 .error {
   color: #1b95e0;
@@ -86,6 +86,9 @@ h1 {
   text-align: center;
   -webkit-transform: skewX(-7deg);
           transform: skewX(-7deg); }
+  @media (min-width: 350px) {
+    h1 {
+      font-size: 2.2em; } }
 
 .twitter-share-button {
   bottom: 0;
@@ -143,6 +146,10 @@ main {
   @media (min-width: 800px) {
     .quote {
       margin-left: 40px; } }
+  @media (min-width: 1400px) {
+    .quote {
+      margin-left: auto;
+      margin-right: 62%; } }
 
 p {
   color: #1b95e0;

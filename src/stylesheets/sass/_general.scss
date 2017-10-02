@@ -7,6 +7,8 @@ html {
   box-sizing: inherit;
 }
 
+
+
 body {
 
   // general rules
@@ -64,9 +66,9 @@ button {
   border: 2px solid $text-dark;
   border-radius: 6px;
   color: $text-dark;
-  font-size: 1.3em;
-  font-weight: bolder;
-  font-family: 'Bungee Inline', cursive;
+  font-size: 1.1em;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
   margin: 20px;
   padding: 0.5em;
@@ -76,6 +78,7 @@ button {
 
   &:hover {
     background-color: rgba(244, 188, 39, 0.75);
+    color: darken($text-dark, 10%);
   }
 
   &:focus {
@@ -83,8 +86,7 @@ button {
   }
 
   @media (min-width: 800px) {
-    font-size: 1.6em;
-    font-weight: bolder;
+    font-size: 1.4em;
   }
 }
 
@@ -102,6 +104,10 @@ h1 {
   padding: 0.4em;
   text-align: center;
   transform: skewX(-7deg);
+
+  @media (min-width: 350px) {
+    font-size: 2.2em;
+  }
 }
 
 .twitter-share-button{
@@ -149,6 +155,11 @@ main {
 
   @media (min-width: 800px) {
     margin-left: 40px;
+  }
+
+  @media (min-width: 1400px) {
+    margin-left: auto;
+    margin-right: 62%;
   }
 }
 

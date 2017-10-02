@@ -22,7 +22,7 @@ function fetchData() {
       })
       .catch(err => {
         console.log(err);
-        quote.innerHTML = 'Oops! Your browser doesn\'t support <a href="http://caniuse.com/#feat=fetch" class="error"> fetch</a>';
+        quote.innerHTML = 'Oops! Your browser doesn\'t support <a href="http://caniuse.com/#feat=fetch" class="error">fetch</a>!';
       });
   }
   // if we have a fact in local storage, set the quote's text content to that fact
