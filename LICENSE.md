@@ -1,4 +1,4 @@
-# [frontend-project-template] License
+# Cat Fact Generator License
 
 ## MIT License
 
