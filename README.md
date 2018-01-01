@@ -1,6 +1,6 @@
 # Cat Fact Generator
 
-One Paragraph of project description goes here
+This is a simple web based fact generator. I used the `fetch()` method for obtaining data so it may not work on some machines. I also utilized local storage so if a user navigates to a different page and then comes back the last seen quote will still be displayed.
 
 ## Getting Started
 
